@@ -10,7 +10,12 @@ class Enqueue{
     }
 
     public function enqueue(){
-        wp_enqueue_style('style', get_stylesheet_directory_uri() . '/dist/styles.css');
+
+        /* Enqueue Styles */
+        wp_enqueue_style('app_styles', get_stylesheet_directory_uri() . '/assets/css/app.min.css');
+
+        /* Enqueue Scripts */
+        wp_enqueue_style('app_scripts', get_stylesheet_directory_uri() . '/assets/js/app.min.js'); 
     }
 
 
